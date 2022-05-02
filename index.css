@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -76,6 +75,7 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Montserrat', sans-serif;
 }
 .nav1 .navback2 ul li a{
+    padding:1vw 2vw;
     font-size: 1rem;
     color:gray  ;
 }
@@ -92,7 +92,8 @@ font-family: 'Montserrat', sans-serif;
 .logo{
     width:20%;
     transform:scale(1,1.3);
-    font-family: sans-serif;
+    font-weight:bold;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size:1.8rem;
     padding: 0 1.6vw;
 }
@@ -110,10 +111,10 @@ font-family: 'Montserrat', sans-serif;
     justify-content: space-between;
     align-items: center;
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 .nav2menu ul a{
-    color:gray  ;
+    color:gray;
 }
 .mobicon{
    margin:0 2vw;
@@ -151,11 +152,11 @@ font-family: 'Montserrat', sans-serif;
     padding: 1vw;
 }
 .third-icon{
-    width:50%;  
+    width:30%;  
 }
 .td p{
-    font-size: 1rem;
-    margin:0.5vw 0;
+    font-size: 1vw;
+    margin:0.3vw 0;
     font-family: 'Montserrat', sans-serif;
     color:#B6BDC4;
 }
@@ -163,20 +164,27 @@ font-family: 'Montserrat', sans-serif;
     font-size: 2.3vw;
     margin:0 1vw;
 }
+.office{
+    width:25%;
+    padding: 0;
+}
 .td{
     display:flex;
     justify-content:space-between;
     flex-direction: column;
 }
 .td h3{
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
+    font-family: 'Oswald Light', sans-serif;
+    /* font-weight: bold; */
     font-size: 1.3vw;
     /* font-weight: bold; */
 }
-.th .call{
-    padding:0 2vw;
+.office .third-icon{
+    width:10%;
 }
+/* .th .call{
+    padding:0 2vw;
+} */
 @media(max-width:1000px){
     .third{
         width:100%;
@@ -224,26 +232,30 @@ font-family: 'Montserrat', sans-serif;
     border:2px solid black;
 }
 .fourth p{
-    font-size: 1.4vw;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
+    font-family: 'oswald Light', sans-serif;
+    font-weight: 100;
     z-index: 3;
     color:var(--maincolor);
 }
-.fourth h1{
-    font-size: 3.9vw;
+.fourth h2{
+    font-size: 4.5vw;
     /* font-family: 'Oswald', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'oswald', sans-serif;
+    /* font-weight: 900; */
     color:white;
     z-index: 4;
     margin:1vw 0;    
 }
-.fourth button{
-    padding:1.3vw 3vw;
+.fourth a{
+    padding:1.3vw 3.3vw;
+    font-size: 1vw;
     margin:1vw  0; 
     border:none;
     outline:none;
     z-index: 5;
-    color:gray;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--maincolor);
 }
 /* ***********************************Third section*********************************************** */
@@ -268,46 +280,59 @@ font-family: 'Montserrat', sans-serif;
 }
 .fd1 h1{
     padding:1vw 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size:4vw;
+    font-family: 'oswald semibold', sans-serif;
+    font-size:4.5vw;
 }
-.fd1 h2{
-    font-size: 2.5vw;
+.fd1 h4{
+    font-size: 2.7vw;
+    font-family: 'oswald', sans-serif;
 }
 .fd1 i{
     font-size: 6vw;
 }
 .fd2{
-    width:65%;
-    padding:5vw;
+    width:60%;
+    padding:7vw 3vw;
 }
-.fd2 h3{
+.fd2 h4{
     color:var(--maincolor);  
-    font-family: 'oswald', sans-serif;
+    font-family: 'oswald light', sans-serif;
     letter-spacing: 1px;
-    font-size: 1.4vw;
+    font-size: 1vw;
     font-weight: bold;
-    position: relative;
 }
-    /* .fd2 .line::before{
-        content:"  ";
-        display:block;
-        position: absolute;
-        left:10%;
-        width:2vw;
-        margin:0 5px;
-        border:2px solid var(--maincolor);
-    } */
+.backline{
+    width:100%;
+    display:flex;
+    position: relative;
+    margin: 1vw 0;
+    /* padding:0 1vw; */
+}
+.backline h1{
+    font-size: 2.5vw;
+    line-height: 1.3;
+    margin:0 1vw;
+    font-family: 'oswald medium', sans-serif;    
+}
+.backline::before{
+    content:"";
+    display:"block";
+    margin-top: 0.8vw;
+    width:5vw;
+    height: 3px;
+    background-color: #DFB163;
+}
+.fd2 .line2{
+    width:20%;
+    margin:0;
+    padding: 0;
+    border-top:3px solid var(--maincolor);
+}
 .fd2 p{
-    font-size: 1.2vw;
-    line-height: 1.4vw;
+    font-size: 1vw;
+    line-height:1.5;
     color:gray;
     font-family: 'Montserrat', sans-serif;
-    margin: 1vw 0;
-}
-.fd2 h1{
-    font-size: 2vw;
-    font-family:  sans-serif;
     margin: 1vw 0;
 }
 .fd2field{
@@ -323,20 +348,20 @@ font-family: 'Montserrat', sans-serif;
     /* justify-content: space-between; */
     align-items: center;
         margin:1vw 0 ;
-        font-size: 1vw;
 }
 .fd2f i{
     /* width:20%; */
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size: 3vw;
+    font-size: 1.6vw;
     color:var(--maincolor);
 }
 .fd2f h2{
     width:70%;
     margin: 0 1vw;
-    font-family: 'oswald', sans-serif;      
+    font-size: 1.4vw;
+    font-family: 'oswald light', sans-serif;      
 }
 @media(max-width:1000px){
     .fifthdata{
@@ -380,41 +405,30 @@ font-family: 'Montserrat', sans-serif;
 /* ***********************************sixth section*********************************************** */
 .sixth{
     width:75%;
-    margin:20px auto;
     display: flex;
+    margin:5vw auto;
     align-items: center;
 }
 .sixth1{
     width:50%;
 }
-.sixth1 h3{
-    font-size:1.2vw;
-    margin:2vw 0;
-    font-family: 'oswald', sans-serif;      
-    color:var(--maincolor);
+.sixth1 h4{
+    color:var(--maincolor);  
+    font-family: 'oswald light', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1vw;
+    font-weight: bold;
 }
-.sixth1 h1{
-    position: relative;
-    font-size: 2.4vw;
-    font-family: 'Montserrat', sans-serif;
-}
-/* .sixth1 h1:before{
-    content:"";
-    display: block;
-    width:2vw;
-    margin:0 0.5vw;
-    transform: translateY(-1rem);
-    border:2px solid var(--maincolor);
-} */
 .sixth1 p{
-    font-size: 1.3vw;
-    color:#A9A8AF;
+    font-size: 1vw;
+    line-height:1.5;
+    color:gray;
     font-family: 'Montserrat', sans-serif;
-    line-height: 1.2;
     margin: 1.5vw 0;
 }
 .sixth1 button{
     padding:1vw 2vw;
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--maincolor);
     border:none;
     outline:none
@@ -427,12 +441,12 @@ font-family: 'Montserrat', sans-serif;
     align-items: center;
 }
 .sixth2card i{
-    font-size: 5vw;
+    font-size: 4vw;
 }
 .sixth2 h3{
-    font-size: 1.5vw;
-font-family: 'oswald', sans-serif;
-    margin: 1.7vw 0;;
+    font-size: 1.4vw;
+    font-family: 'oswald light', sans-serif;
+    margin: 1vw 0;;
 }
 .sixth2 button{
     font-size: 0;   
@@ -441,33 +455,33 @@ border:none;
 outline:none
 }
 .sixth2 button i{
-    font-size: 2vw;
-    padding: 0.5vw 1vw;
+    font-size: 1vw;
+    padding: 0.8vw 1vw;
 }
 .sixth2 .btn1{
     position:absolute;
-    left:5%;
+    left:6%;
 }
 .sixth2 .btn2{
     position: absolute;
-    right:5%;
+    right:6%;
 }
 .sixth2card{
     width:45%;
     background-color: #F3F6FF;
     display: flex;
-    justify-content: center;
-    padding:4vw 2vw;
+    justify-content: space-around;
+    padding:2.5vw 1.6vw;
     align-items: center;
     flex-direction: column;
 }
 .sixth2card p{
-    width:90%;
-text-align: center;
-font-size: 1.1vw;
-font-family: 'Montserrat', sans-serif;
-color:gray;
-line-height: 1.2;
+    font-size: 1vw;
+    line-height:1.5;
+    text-align: center  ;
+    color:gray;
+    font-family: 'Montserrat', sans-serif;
+    /* margin: 1vw 0;   */
 }
 @media(max-width:600px){
     .sixth{
@@ -513,41 +527,36 @@ line-height: 1.2;
     background-color:#F1F5FD;
 }
 .seven{
-    width:75%;
+    width:80%;
     margin: auto;
     display:flex;
 }
 .seventh .sev1{
-    width:50%;
-    padding:5vw 0;
+    width:55%;
+    padding:5vw 3vw;
 }
 .seventh .sev1 h4{
-    font-family: 'oswald', sans-serif;
-    font-size: 0.9vw;
-    color:var(--maincolor);
-    padding:1vw 0;
+    color:var(--maincolor);  
+    font-family: 'oswald light', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1vw;
+    font-weight: bold;
 }
-.seventh .sev1 h1{
-    padding:1vw 0;
-    font-size: 2.5vw;
-font-family: 'Montserrat', sans-serif;
-
-}
-.seventh .sev1 p{
-font-family: 'Montserrat', sans-serif;
-display: flex;
-justify-content:center;
-align-items: center;
-color:#A9A8AF;
-
-}
-.sev1para{
-    margin-bottom: 2vw;
-    font-size: 1.3vw;
+.seventh .sev1 .sev1para{
+    font-size: 1vw;
+    line-height:1.5;
+    color:gray;
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.5vw 0;
 }
 .seventh .sev1 .cheak{
     /* width:42%; */
     display: flex;
+    margin: 0.1vw 0;
+}
+.seventh .sev1 .cheak p{
+    font-family: 'oswald light', sans-serif;
+    font-weight: bold    ;
 }
 .seventh .sev1  i{
     color:var(--maincolor);
@@ -559,27 +568,21 @@ color:#A9A8AF;
 }
 .seventh .sev1  button{
     background-color:var(--maincolor);
-    margin:1vw 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    margin:2vw 0;
     padding: 1vw 2vw;
     border:none;
     outline:none;
 }
-/* .seventh .sev1 h1::before{
-    content:"";
-    display:inline-block;
-    width:2;
-    margin:0 5px;
-    transform: translateY(-1rem);
-    border:2px solid var(--maincolor);
-} */
-.seventh .sev2{
-    position: relative;
-    width:50%;
-}
 .seventh  img{
-    width:100%;
-  
+    width:37%;
+    height:50%;
 }
+    /* .seventh .sev2{
+        width:45%;
+        height:60%;
+    } */
 @media(max-width:607px){
 .seven{
     width:100%;
@@ -609,6 +612,73 @@ color:#A9A8AF;
     display:none;
 }
 }
+/* ****************************************************************************************************** */
+.eighth{
+    width:75vw;
+    margin:6vw auto;   
+    text-align: center;
+}
+.eighth h4{
+    color:var(--maincolor);  
+    font-family: 'oswald light', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1vw;
+    font-weight: bold;
+}
+.active{
+    background-color: #DFB163;
+}
+.eighth h1{
+    width:50%;
+    font-size: 2.5vw;
+    line-height: 1.3;
+    margin:1.5vw auto;
+    font-family: 'oswald', sans-serif; 
+}
+.eighthmenu{
+    width:40%; 
+    margin:2vw auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.eighthmenu a{
+    color:var(--maincolor);
+    border:2px solid #EAE9EA;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0.5vw 1vw;
+}
+.gal{
+    padding: 0;
+    position: relative;
+    transition: all 10s;
+}
+.gal:hover::before{
+    content:"";
+    position: absolute;
+    bottom:0;
+    height:100%;
+}
+.gal:before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    /* transition: all 2s ; */
+}
+
+.eighthgallary{
+width:100%;
+display:grid;
+grid-template-columns: repeat(3,1fr);
+grid-template-columns: repeat(3,1fr);
+margin:auto;
+}
+.eighthgallary img{
+    width: 100%;
+    height: 100%;;
+}
 /* ***********************************Seventh section*********************************************** */
 .ninth{
     width:100%;
@@ -632,22 +702,28 @@ justify-content: center;
     flex-direction:column;
 }
 .ninth .n1 h4{
-    color:white;
-    font-family: 'oswald', sans-serif;
-}   
+    color:white; 
+    font-family: 'oswald light', sans-serif;
+    letter-spacing: 1px;
+    margin: 1vw 0;
+    font-size: 1vw;
+    font-weight: bold;
+}  
 .ninth .n1 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2vw;
+    font-family: 'oswald medium', sans-serif;
+    line-height: 1.3;
+    font-size: 2.5vw;
     font-weight: 1000;
 }   
 .ninth .n2{
     width:75%;
     height:100%;
     position: relative;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 8vw 0;
+    padding: 6vw 0;
 }
 .ninth .n2 .cards{
     width:28%;
@@ -667,15 +743,15 @@ justify-content: center;
 }
 .ninth .cardsdata h3{
     color:white;
-    font-size: 1.4vw;
-    font-family: 'oswald', sans-serif;
+    font-size: 1.3vw;
+    font-family: 'oswald light', sans-serif;
     letter-spacing: 1px;
 
 }
 .ninth .cardsdata h5{
     color:gray;
     font-family: 'Montserrat', sans-serif;
-    margin: 1vw 0;
+    margin: 0.5vw 0;
 }
 .n2 button{
     border:none;
@@ -729,58 +805,59 @@ display:flex;
 justify-content:center;
 flex-direction: column;
 /* align-items:center ; */
-padding: 5vw 0;
+padding: 5vw 1vw;
 }
-.tenth .ten1 h5{
-color:var(--maincolor);
-font-family: 'oswald', sans-serif;
-}
+.tenth .ten1 h4{
+    color:var(--maincolor); 
+    font-family: 'oswald light', sans-serif;
+    letter-spacing: 1px;
+    margin: 1vw 0;
+    font-size: 1vw;
+    font-weight: bold;
+    
+}  
 .tenth .ten1 span button{
-padding:1vw 2vw;
+padding:0.5vw 1vw;
 outline:none;
 color:var(--maincolor);
-border: 2px solid #DFB163;
+border: 1px solid #DFB163;
 background-color: white;
 }
 .tenth .ten1 h1{
-font-size: 3vw;
-font-family: 'Montserrat', sans-serif;
-
+font-family: 'oswald', sans-serif;
 }
 .tenth .ten1 .tenclient{
 width:25%;
 display:flex;
 justify-content: space-between;
 align-items: center;
-margin:1vw 0;
 }
 .tenth .ten1 .tenclient img{
-    width:40%;
+    width:35%;
 border-radius: 50%;
 }
-.tenth .ten1 .tenclient .clientinfo{
+/* .tenth .ten1 .tenclient .clientinfo{
 display: flex;
 justify-content: space-between;
 flex-direction: column;
-}
+} */
 .tenth .ten1 .tenclient .clientinfo h5{
-font-family: 'oswald', sans-serif;
-font-size: 1.5vw;
+font-family: 'oswald light', sans-serif;
+font-size: 1.3vw;
 color:black;
 letter-spacing: 1px;
-margin:0.5vw 0;
 }
 .tenpara{
 font-family: 'Montserrat', sans-serif;
 color:#BCBBBC;
-line-height: 2vw;
+line-height: 1.4;
 font-size: 1.2vw;
-width:90%;
 margin:10px 0;
 }
 .tenth .ten1 .tenclient .clientinfo p{
 font-family: 'Montserrat', sans-serif;
-font-size: 1.5vw;
+font-size: 1vw;
+margin-top: 0.5vw;
 font-style: italic;
 color:gray;;
 }
@@ -833,16 +910,25 @@ height:100%;
     padding: 7vw 1vw;
     background: #F1F5FD;
 }
-.twelth h5{
+.twelth h4{
+    color:var(--maincolor); 
+    font-family: 'oswald light', sans-serif;
+    letter-spacing: 1px;
+    margin: 1vw 0;
+    font-size: 1vw;
+    font-weight: bold;
+    
+}  
+.twelth h5{     
     margin:1vw 0;
     font-size: 1.2vw;
-font-family: 'oswald', sans-serif;
-    color: var(--maincolor);
+font-family: 'oswald light', sans-serif;
+font-weight: bold;
 }
 .twelth h1{
     margin:1.5vw auto;
-font-family: 'Montserrat', sans-serif;
-font-size: 2.3vw;
+font-family: 'Oswald', sans-serif;
+font-size: 2.5vw;
 width: 40%;
 }
 .twelthcards{
@@ -884,10 +970,9 @@ width: 40%;
     letter-spacing: 0.1px;
 }
 .clsd{
-    width:100%;
+    /* width:50%; */
     display:flex;
 margin:2vw  0;
-    justify-content: space-between;
 }
 .twcard span i{
     color:#DFB163;
@@ -929,7 +1014,7 @@ margin:2vw  0;
 /* *************************************************************************************** */
 footer{
     width:100%;
-    padding:5vw 1vw;
+    padding:2vw 1vw;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -939,12 +1024,12 @@ footer{
 }
 footer .adress .fadr{
     width:100%;
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     font-family: 'Montserrat', sans-serif;
-    margin:2.5vw 0;
+    margin:1vw 0;
 }
 footer .adress .fadr i{
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     margin:0 1vw;
 }
 /* footer .adress .f1{
@@ -954,15 +1039,14 @@ footer .adress .fadr i{
 .footericon{
     width:80%;
     display:flex;
-    justify-content: space-around;
-    padding: 0 2vw;
     align-items: center;
 }
 .footericon a{
     border:1px solid white;
-    padding: 0.8vw 1.1vw;
+    padding: 0.5vw 0.7vw;
+    margin:0.4vw;
     border-radius: 50%;
-    font-size: 1.5vw;
+    font-size: 1vw;
     color:white;
 }
 footer .menu{
@@ -974,12 +1058,12 @@ footer .menu{
 }
 footer h2{
     font-family: 'oswald', sans-serif;
-    font-size: 2vw;
+    font-size: 1.7vw;
     color: var(--maincolor);
 }
 footer .menu a{
-    margin:1vw 0;
-    font-size: 1.3vw;
+    margin:0.5vw 0;
+    font-size: 1.1vw;
     font-family: 'Montserrat', sans-serif;
     color:white;
 }
@@ -988,10 +1072,26 @@ footer .menu i{
 }
 footer .menu input{
     padding:1vw;
-    margin:1vw 0;
+    margin:0.5vw 0;
     font-size: 1vw;
 }
 footer .menu button{
-    padding:1.5vw 2vw;
+    padding:1vw 1.5vw;
+    font-size: 1vw;
+    font-family: 'Montserrat', sans-serif;
     background: var(--maincolor);
+}
+.copyright{
+    width:100%;
+    padding:5vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3vw;
+}   
+.copyright span{
+    font-weight: bold;
 }

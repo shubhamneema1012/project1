@@ -35,7 +35,7 @@
                 <h1 class="logo"><span>i</span>DESIGN</h1>
                 <div class="nav2menu">
                     <ul>
-                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#" class="nactive">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Project</a></li>
@@ -75,12 +75,25 @@
                 <p>+1234567890</p>
             </div>
         </div>
+        
     </section>
-    <section class="fourth">
-        <div class="fourth_overlay"></div>
-        <p>CREATIVE INTERIOR DESIGN</p>
-        <h2>Make Your Home Better</h2>
-        <a href="#">Learn More</a>
+    <section class="slide">
+        <button class="btn1" onclick="decslide()"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="btn2" onclick="incslide()"><i class="fa-solid fa-angle-right"></i></button>
+        <div class="slide1">
+            <div class="sid">
+                <div class="fourth_overlay"></div>
+                <p>CREATIVE INTERIOR DESIGN</p>
+                <h2>Make Your Home Better</h2>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="sid">
+                <div class="fourth_overlay"></div>
+                <p>CREATIVE INTERIOR DESIGN</p>
+                <h2>Make Your Better</h2>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
     </section>
     <section class="fifth">
         <div class="fifthdata">
@@ -128,17 +141,44 @@
             <button>View more</button>
         </div>
         <div class="sixth2">
-            <button class="btn1"><i class="fa-solid fa-angle-left"></i></button>
-            <button class="btn2"><i class="fa-solid fa-angle-right"></i></button>
-            <div class="sixth2card">
-                <i class="fa-solid fa-kitchen-set"></i>
-                <h3>Kitchen design</h3>
-                <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
-            </div>
-            <div class="sixth2card">
-                <i class="fa-solid fa-envelope-open-text"></i>
-                <h3>Bathroom design</h3>
-                <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
+            <button class="btn1" onclick="decsixthslide()"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="btn2" onclick="incsixthslide()"><i class="fa-solid fa-angle-right"></i></button>
+            <div class="sixth2slide">
+                <div class="sixth2card">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <h3>Kitchen design</h3>
+                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
+                </div>
+                <div class="sixth2card">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <h3>Bathroom design</h3>
+                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
+                </div>
+                <div class="sixth2card">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <h3>Bathroom design</h3>
+                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
+                </div>
+                <div class="sixth2card">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <h3>Bathroom design</h3>
+                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
+                </div>
+                <div class="sixth2card">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <h3>Bathroom design</h3>
+                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
+                </div>
+                <div class="sixth2card">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <h3>Bathroom design</h3>
+                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
+                </div>
+                <div class="sixth2card">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                    <h3>Bathroom design</h3>
+                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
+                </div>
             </div>
         </div>
     </section>
@@ -202,28 +242,58 @@
                 <h4>OUR TEAM</h4>
                 <h1>Meet Our Team Members</h1>
             </div>
-            <div class="n2">
-                <button class="btn1"><i class="fa-solid fa-angle-left"></i></button>
-                <button class="btn2"><i class="fa-solid fa-angle-right"></i></button>
-                <div class="cards">
-                    <img src="./img/team-1.jpg" alt="">
-                    <div class="cardsdata">
-                        <h3>Name Goes Here</h3>
-                        <h5>Designation</h5>
+            <div class="ninthslide">
+                <button class="btn1" onclick="decninthslide()"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="btn2" onclick="incninthslide()"><i class="fa-solid fa-angle-right"></i></button>
+                <div class="n2">
+                    <div class="cards">
+                        <img src="./img/team-1.jpg" alt="">
+                        <div class="cardsdata">
+                            <h3>Name Goes Here</h3>
+                            <h5>Designation</h5>
+                        </div>
                     </div>
-                </div>
-                <div class="cards">
-                    <img src="./img/team-2.jpg" alt="">
-                    <div class="cardsdata">
-                        <h3>Name Goes Here</h3>
-                        <h5>Designation</h5>
+                    <div class="cards">
+                        <img src="./img/team-2.jpg" alt="">
+                        <div class="cardsdata">
+                            <h3>Name Goes Here</h3>
+                            <h5>Designation</h5>
+                        </div>
                     </div>
-                </div>
-                <div class="cards">
-                    <img src="./img/team-3.jpg" alt="">
-                    <div class="cardsdata">
-                        <h3>Name Goes Here</h3>
-                        <h5>Designation</h5>
+                    <div class="cards">
+                        <img src="./img/team-3.jpg" alt="">
+                        <div class="cardsdata">
+                            <h3>Name Goes Here</h3>
+                            <h5>Designation</h5>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="./img/team-3.jpg" alt="">
+                        <div class="cardsdata">
+                            <h3>Name Goes Here</h3>
+                            <h5>Designation</h5>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="./img/team-3.jpg" alt="">
+                        <div class="cardsdata">
+                            <h3>Name Goes Here</h3>
+                            <h5>Designation</h5>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="./img/team-3.jpg" alt="">
+                        <div class="cardsdata">
+                            <h3>Name Goes Here</h3>
+                            <h5>Designation</h5>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="./img/team-3.jpg" alt="">
+                        <div class="cardsdata">
+                            <h3>Name Goes Here</h3>
+                            <h5>Designation</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -233,7 +303,7 @@
         <div class="ten1">
             <h4>TESTIMONiAL </h4>
             <div class="backline">
-            <h1>What Our Clients Say</h1>
+                <h1>What Our Clients Say</h1>
             </div>
             <div class="tenclient">
                 <img src="./img/testimonial-1.jpg" alt="mm">
@@ -256,7 +326,7 @@
     </section>
     <section class="twelth">
         <h4 class="twhead">OUR BLOG</h4>
-            <h1>ReadT The letest News & Articles From Our Blog</h1>
+        <h1>ReadT The letest News & Articles From Our Blog</h1>
         <div class="twelthcards">
             <div class="twcard">
                 <img src="./img/blog-1.jpg" alt="">
@@ -265,7 +335,8 @@
                         <h5>Diam amet eos at no eos</h5>
                     </div>
                 </div>
-                <p class="twelpara"> Diam amet eos at no eos sit.amet rebum ipsum clita stet. diam sea est diam eos. sit vero stet justo
+                <p class="twelpara"> Diam amet eos at no eos sit.amet rebum ipsum clita stet. diam sea est diam eos. sit
+                    vero stet justo
                 </p>
                 <div class="clsd">
                     <span><i class="fa-solid fa-user"></i>
@@ -286,7 +357,8 @@
                         <h5>Diam amet eos at no eos</h5>
                     </div>
                 </div>
-                <p>Diam amet eos at no eos sit.amet rebum ipsum clita stet. diam sea est diam eos. sit vero stet justo</p>
+                <p class="twelpara">Diam amet eos at no eos sit.amet rebum ipsum clita stet. diam sea est diam eos. sit vero stet justo
+                </p>
                 <div class="clsd">
                     <span><i class="fa-solid fa-user"></i>
                         <p>Admin</p>
@@ -306,7 +378,8 @@
                         <h5>Diam amet eos at no eos</h5>
                     </div>
                 </div>
-                <p>Diam amet eos at no eos sit.amet rebum ipsum clita stet. diam sea est diam eos. sit vero stet justo</p>
+                <p class="twelpara">Diam amet eos at no eos sit.amet rebum ipsum clita stet. diam sea est diam eos. sit vero stet justo
+                </p>
                 <div class="clsd">
                     <span><i class="fa-solid fa-user"></i>
                         <p>Admin</p>
@@ -344,7 +417,7 @@
             <a href="#"><i class="fa-solid fa-angle-right"></i>Contact us</a>
         </div>
         <div class="menu">
-            <h2>Quick Links</h2>
+            <h2>Popular Links</h2>
             <a href="#"><i class="fa-solid fa-angle-right"></i>Home</a>
             <a href="#"><i class="fa-solid fa-angle-right"></i>About Us</a>
             <a href="#"><i class="fa-solid fa-angle-right"></i>Our Services</a>
@@ -359,9 +432,9 @@
         </div>
     </footer>
     <div class="copyright">
-            <p><span>©️Your Site Name</span>. All Rights Reserved .Designed  by <span>HTML Codex</span></p>
+        <p><span>©️Your Site Name</span>. All Rights Reserved .Designed by <span>HTML Codex</span></p>
     </div>
-
+    <script src="animation.js"></script>
 </body>
 
 </html>

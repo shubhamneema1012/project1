@@ -11,9 +11,13 @@
     width:80%;
 } */
 body{
-    max-width: 100%;
+    max-width: 100vw;
     min-height:100vh;
     /* overflow: hidden; */
+}
+.bt:hover{
+    /* background-color:#ed9e21; */
+    transition: all 0.5s;
 }
 li{
     list-style: none;
@@ -135,15 +139,23 @@ font-family: 'Montserrat', sans-serif;
         width:100%;
     }
 }
-@media(max-width:604px){
+@media(max-width:750px){
     .mobicon{
         display:block;
+    }
+    .logo{
+        font-size: 3vw;
     }
     /* .nav{
         padding:0;
     } */
     .nav1{
         display:none;
+
+    }
+    .nav2{
+        height:13vh;
+        padding:2vw 0;
     }
     .nav2menu{
         display:none;
@@ -205,7 +217,7 @@ font-family: 'Montserrat', sans-serif;
         font-size: 2vw;
     }
 }
-@media(max-width:607px){
+@media(max-width:750px){
     .third{
         display: none;
         margin-top: 2%;;
@@ -310,15 +322,22 @@ outline:none
     margin:1vw  0; 
     border:none;
     outline:none;
+    font-family: 'Montserrat', sans-serif;
     z-index: 5;
     color:gray;
     background-color: var(--maincolor);
 }
-/* @media(max-width:1000px){
-    .fourth{
-        margin-top: 2%;;
+.slide1 .sid a:hover{
+    background-color:#ed9e21;
+}
+@media(max-width:608px){
+    .slide1 .sid p{
+            font-size: 4vw;
     }
-} */
+    .slide1 .sid h2{
+        font-size: 6vw;
+    }
+}
 /* ***********************************Third section*********************************************** */
 .fifth{
     width:100%;
@@ -406,7 +425,6 @@ outline:none
 .fd2f{
     width:50%;
     display: flex;
-    border:2px solid black;
     /* justify-content: space-between; */
     align-items: center;
         margin:1vw 0 ;
@@ -440,6 +458,12 @@ outline:none
         padding: 5vw;
         font-size: 10vw;
     }
+    .fd1 h4{
+        font-size: 6vw;
+    }
+    .fd1 h1{
+        font-size: 10vw;
+    }
     .fd2field{
         margin-top: 4vw;
     }
@@ -450,6 +474,9 @@ outline:none
         font-size: 7vw;
     }
     .fd2 h3{
+        font-size: 5vw;
+    }
+    .fd2 h4{
         font-size: 5vw;
     }
     .fd2 p{
@@ -491,10 +518,14 @@ outline:none
 .sixth1 button{
     padding:1vw 2vw;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1.5vw;
     background-color: var(--maincolor);
     border:none;
     outline:none
 } 
+.sixth1 button:hover{
+    background-color:#ed9e21;
+}
 .sixth2{
     width:50%;
     position: relative;
@@ -580,6 +611,7 @@ outline:none
     }
     .sixth1 button{
         padding: 2vw 4vw;
+        font-size: 5vw;
     }
     .sixth2card h1{
         font-size: 2vw;
@@ -595,6 +627,14 @@ outline:none
     }
     .sixth2{
         margin:4vw 0;
+    }
+    .sixth2 .btn1{
+        font-size: 2vw;
+        padding: 2vw 3vw;
+    }
+    .sixth2 .btn2{
+        font-size: 2vw;
+        padding: 2vw 3vw;
     }
 }
 /* ***********************************Seventh section*********************************************** */
@@ -645,11 +685,14 @@ outline:none
 .seventh .sev1  button{
     background-color:var(--maincolor);
     font-family: 'Montserrat', sans-serif;
-    font-size: 1vw;
+    font-size: 1.3vw;
     margin:2vw 0;
     padding: 1vw 2vw;
     border:none;
     outline:none;
+}
+.seventh .sev1  button:hover{
+    background-color:#ed9e21;
 }
 .seventh  img{
     width:37%;
@@ -673,6 +716,7 @@ outline:none
 }
 .seventh .sev1 h1{
     font-size: 7vw;
+    margin: 2vw 0;
 }
 .seventh .sev1 .sev1para{
     font-size: 3vw;
@@ -680,6 +724,7 @@ outline:none
 }
 .seventh .sev1  button{
     padding:3vw 6vw;
+    font-size: 5vw;
 }
 .seventh .sev1 i{
     font-size: 5vw;;
@@ -703,6 +748,7 @@ outline:none
 }
 .active{
     background-color: #DFB163;
+    color:black;
 }
 .eighth h1{
     width:50%;
@@ -717,12 +763,17 @@ outline:none
     display:flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .eighthmenu a{
     color:var(--maincolor);
     border:2px solid #EAE9EA;
     font-family: 'Montserrat', sans-serif;
     padding: 0.5vw 1vw;
+}
+.eighthmenu a:hover{
+    background-color: #DFB163;
+    color:black;
 }
 .gal{
     padding: 0;
@@ -764,6 +815,9 @@ margin:auto;
     .eighthmenu{
         width:100%
     }
+    /* .eighthmenu a{
+        width:50%;
+    } */
     .eighthgallary{
         grid-template-columns: repeat(2,1fr);
 grid-template-columns: repeat(2,1fr);
@@ -880,8 +934,14 @@ justify-content: center;
         padding: 3vw;
         flex-direction: column;
     }
+    .ninth .n1 h4{
+        font-size: 5vw;;
+    }
     .ninthslide{
         width:100%;
+    }
+    .ninthslide .n2{
+        width:400%;
     }
     .ninth .n1{
         width:100%;
@@ -925,8 +985,9 @@ padding: 5vw 1vw;
 .tenth .ten1 span button{
 padding:0.5vw 1vw;
 outline:none;
+font-weight: 900;
 color:var(--maincolor);
-border: 1px solid #DFB163;
+border: 3px solid #DFB163;
 background-color: white;
 }
 .tenth .ten1 h1{
@@ -1131,6 +1192,7 @@ margin:2vw  0;
     }
     .twelpara{
         font-size: 5vw!important;
+        margin:5vw 1vw!important;
     }
 }
 /* *************************************************************************************** */
@@ -1239,7 +1301,7 @@ footer .adress .fadr i{
 }}
 .copyright{
     width:100%;
-    padding: 3vw;
+    padding: 2vw;
     display:flex;
     justify-content: center;
     align-items: center;

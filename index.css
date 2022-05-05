@@ -153,10 +153,10 @@ font-family: 'Montserrat', sans-serif;
         display:none;
 
     }
-    .nav2{
+    /* .nav2{
         height:13vh;
         padding:2vw 0;
-    }
+    } */
     .nav2menu{
         display:none;
     }
@@ -324,7 +324,7 @@ outline:none
     outline:none;
     font-family: 'Montserrat', sans-serif;
     z-index: 5;
-    color:gray;
+    color:black;
     background-color: var(--maincolor);
 }
 .slide1 .sid a:hover{
@@ -596,9 +596,12 @@ outline:none
     .sixth2,.sixth1{
         width:100%;
     }
-    
     .sixthcard{
         width:60%;
+        padding: 21vw 0;
+    }
+    .sixth2card{
+        padding: 21vw 0;
     }
     .sixth1 h4{
         font-size: 6vw;
@@ -617,7 +620,7 @@ outline:none
         font-size: 2vw;
     }
     .sixth2card{
-        padding: 7vw 0;;
+        padding: 21vw 0;;
     }
     .sixth2card p{
         font-size: 2vw;
@@ -635,6 +638,9 @@ outline:none
     .sixth2 .btn2{
         font-size: 2vw;
         padding: 2vw 3vw;
+    }
+    .sixth2 button i{
+        font-size: 4vw;;
     }
 }
 /* ***********************************Seventh section*********************************************** */
@@ -758,7 +764,7 @@ outline:none
     font-family: 'oswald', sans-serif; 
 }
 .eighthmenu{
-    width:40%; 
+    width:80%; 
     margin:2vw auto;
     display:flex;
     justify-content: space-around;
@@ -767,7 +773,7 @@ outline:none
 }
 .eighthmenu a{
     color:var(--maincolor);
-    border:2px solid #EAE9EA;
+    border:2px solid #DFB163;
     font-family: 'Montserrat', sans-serif;
     padding: 0.5vw 1vw;
 }
@@ -778,23 +784,40 @@ outline:none
 .gal{
     padding: 0;
     position: relative;
-    transition: all 10s;
+    transition: 10s;
+    overflow: hidden;
 }
-.gal:hover::before{
-    content:"";
+.galhover{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
-    bottom:0;
+    bottom:-100%;
+    transition: 0.8s;
+    border:2px solid black;
+    background-color: black;
+}
+.galhover p{
+    font-size: 2vw;
+    font-family: 'oswald', sans-serif; 
+    color:white;
+}
+.galhover i{
+    padding:1vw;
+    color:var(--maincolor);
+    border:2px solid var(--maincolor);
+}
+/* .galhover span{
+    display: flex;
+    width:60%;
+} */
+
+.gal:hover .galhover{
+    bottom: 0;
     height:100%;
 }
-.gal:before{
-    content:"";
-    background-color: black;
-    position: absolute;
-    bottom:0;
-    width:100%;
-    /* transition: all 2s ; */
-}
-
 .eighthgallary{
 width:100%;
 display:grid;
@@ -1048,6 +1071,9 @@ height:100%;
     .tenth .ten1 h5{
         font-size: 4vw;
     }
+    .tenth .ten1 h4{
+        font-size: 5vw;
+    }
     .tenth .ten1 h1{
         font-size: 8vw;
         margin: 2vw 0;
@@ -1277,6 +1303,7 @@ footer .menu{
     width:100%;
 }
 footer .adress .fadr{
+    margin:3vw 0;
     font-size: 3vw;
 }
 footer h2{
@@ -1288,12 +1315,18 @@ footer .menu a{
 }
 footer .menu input{
     font-size: 4vw;
+    margin:1vw 0;
 }
 footer .adress .fadr i{
     font-size: 3vw;
 }
 .clsd p{
     font-size: 5vw;
+}
+footer .menu button{
+    font-size: 4vw;
+    margin: 2vw 0;
+    padding:2vw 3vw;
 }
 .footericon a{
     font-size: 6vw;
@@ -1312,4 +1345,9 @@ footer .adress .fadr i{
 }   
 .copyright span{
     font-weight: bold;
+}
+@media(max-width:608){
+    .copyright p{
+        font-size: 4vw;
+    }
 }

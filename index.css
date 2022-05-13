@@ -26,7 +26,7 @@ a{
     text-decoration: none;
 }
 header{
-    width:74vw;    
+    width:85vw;    
     position:relative;
     margin: auto;
     color:white;
@@ -163,7 +163,7 @@ font-family: 'Montserrat', sans-serif;
 }
 /* ***********************************Third section*********************************************** */
 .third{
-    width: 74vw;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -241,52 +241,34 @@ font-family: 'Montserrat', sans-serif;
     position:relative;
     overflow:hidden;
 }
-.slide1{
-    width:200%;
-    height:100%;
-    transform: translate(0%);
-    transition:0.8s;
-    display: inline-flex;  
-}
-.slide button{
-    font-size: 0;   
-background-color: var(--maincolor);
-border:none;
-outline:none
-}
-.slide button i{
-    font-size: 2vw;
-    padding: 0.5vw 1vw;
-}
-.slide .btn1{
-    z-index: 100;
-    top: 50%;
-    /* background-color: #DFB163; */
-    position:absolute;
-    left:5%;
-    opacity:0.3;
 
+.slick-prev,.slick-next{
+    z-index: 55;
+    width:135px!important;
+} 
+.slide1{
+    width: 100%;
 }
-.slide .btn1:hover{
-    opacity:1;
+.slick-prev:before{
+    content:"<"!important;
+    color:black!important;
 }
-.slide .btn2:hover{
-    opacity:1;
+.slick-next:before{
+    content:">"!important;
+    color:black!important;
 }
-.slide .btn2{
-    z-index: 100; 
-    top: 50%;
-    opacity:0.3;
-    position: absolute;
-    right:5%;
+.slick-prev:before,
+.slick-next:before{
+    background-color: var(--maincolor)!important;
+    padding: 1vw 1.5vw!important;
 }
 .slide1 .sid{
     width:100%;
-    height:100%;
+    height:100vh;
     background-image:url("./img/carousel-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    display: flex!important;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -304,15 +286,14 @@ outline:none
     height:100%;
 }
 .slide1 .sid p{
-    font-size: 1.4vw;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    font-family: 'oswald', sans-serif;
     z-index: 3;
     color:var(--maincolor);
 }
-.slide1 .sid h2{
+.slide1 .sid h1{
     font-size: 3.9vw;
-    /* font-family: 'Oswald', sans-serif; */
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color:white;
     z-index: 4;
     margin:1vw 0;    
@@ -337,14 +318,20 @@ outline:none
     .slide1 .sid h2{
         font-size: 6vw;
     }
-}
+    .slide1 .sid a{
+        padding: 3.3vw 6vw;
+    }
+    .slick-prev,.slick-next{
+        display: none!important;
+    }
+ }
 /* ***********************************Third section*********************************************** */
 .fifth{
     width:100%;
     background-color: #F1F5FD;
 }
 .fifthdata{
-    width:75%;
+    width:85%;
     margin:auto;
     display: flex;
     justify-content: space-between;
@@ -493,7 +480,7 @@ outline:none
 }
 /* ***********************************sixth section*********************************************** */
 .sixth{
-    width:75%;
+    width:85%;
     display: flex;
     margin:5vw auto;
     align-items: center;
@@ -526,82 +513,14 @@ outline:none
 .sixth1 button:hover{
     background-color:#ed9e21;
 }
-.sixth2{
-    width:50%;
-    position: relative;
-    overflow: hidden;
-}
-.sixth2slide{
-    width:400%;
-    height: 100%;
-    position: relative  ;
-    display: inline-flex;
-    justify-content: space-around;
-    transition: 0.8s;
-}
-.sixth2card i{
-    font-size: 4vw;
-}
-.sixth2 h3{
-    font-size: 1.4vw;
-    font-family: 'oswald light', sans-serif;
-    margin: 1vw 0;;
-}
-.sixth2 button{
-    font-size: 0;   
-background-color: var(--maincolor);
-border:none;
-outline:none
-}
-.sixth2 button i{
-    font-size: 1vw;
-    padding: 0.8vw 1vw;
-}
-.sixth2 .btn1{
-    position:absolute;
-    z-index: 100;
-    top:50%;    
-    left:5%;
-}
-.sixth2 .btn2{
-    position: absolute;
-    z-index: 100;
-    top:50%;
-    right:6%;
-}
-.sixth2card{
-    width:40%;
-    background-color: #F3F6FF;
-    display: flex;
-    justify-content: space-around;
-    padding:2.5vw 1.6vw;
-    align-items: center;
-    margin:0 1.5vw;
-    flex-direction: column;
-}
-.sixth2card p{
-    font-size: 1vw;
-    line-height:1.5;
-    text-align: center  ;
-    color:gray;
-    font-family: 'Montserrat', sans-serif;
-    /* margin: 1vw 0;   */
-}
 @media(max-width:600px){
     .sixth{
         width:100%;
         flex-direction: column;
         padding: 3vw;
     }
-    .sixth2,.sixth1{
+    .sixth1{
         width:100%;
-    }
-    .sixthcard{
-        width:60%;
-        padding: 21vw 0;
-    }
-    .sixth2card{
-        padding: 21vw 0;
     }
     .sixth1 h4{
         font-size: 6vw;
@@ -614,42 +533,100 @@ outline:none
     }
     .sixth1 button{
         padding: 2vw 4vw;
+        margin: 3vw 0;
         font-size: 5vw;
     }
-    .sixth2card h1{
-        font-size: 2vw;
-    }
-    .sixth2card{
-        padding: 21vw 0;;
-    }
-    .sixth2card p{
-        font-size: 2vw;
-    }
-    .sixth2card h3{
-        font-size: 4vw;
-    }
-    .sixth2{
-        margin:4vw 0;
-    }
-    .sixth2 .btn1{
-        font-size: 2vw;
-        padding: 2vw 3vw;
-    }
-    .sixth2 .btn2{
-        font-size: 2vw;
-        padding: 2vw 3vw;
-    }
-    .sixth2 button i{
-        font-size: 4vw;;
+}
+.slides{
+    width:50%;
+    /* height: 100%;; */
+    position:relative;
+    overflow:hidden;
+}
+
+.slick-prev,.slick-next{
+    z-index: 55;
+    width:135px!important;
+} 
+.slide1s{
+    width: 100%;
+    /* height: 100%; */
+}
+.slide1s .slick-prev:before{
+    content:"<"!important;
+    color:black!important;
+}
+.slide1s  .slick-next:before{
+    content:">"!important;
+    color:black!important;
+}
+.slide1s  .slick-prev:before,
+.slide1s .slick-next:before{
+    background-color: var(--maincolor)!important;
+    padding: 1vw 1.5vw!important;
+}
+.slide1s .sids{
+    width:85%!important;
+    padding: 5vw 1vw;
+    display: flex!important;
+ background-color: #F3F6FF;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.slide1s .sids h3{
+    /* font-size: 3.9vw; */
+    font-family: 'oswald', sans-serif;
+    /* color:white; */
+    z-index: 4;
+    margin:1vw 0;    
+}
+
+.sids i{
+    font-size: 4vw;
+}
+.sids p{
+    font-size: 1vw;
+    line-height:1.5;
+    text-align: center ;
+    color:gray;
+    font-family: 'Montserrat', sans-serif;
+}
+@media(max-width:1000px){
+    .sixth{
+        width:100%;
     }
 }
+@media(max-width:608px){
+    .slide1s .sids p{
+            font-size: 4vw;
+    }
+    .slides{
+        width:100%;
+        margin: 5vw 0;
+    }
+    .slide1s .sids{
+        padding: 5vw 1.5vw;
+
+    }
+    .slide1s .sids h3{
+        font-size: 4vw;
+    }
+    .slide1s .sids p{
+        font-size: 2vw;
+    }
+    .slide1s .slick-prev,.slick-next{
+        display: block!important;
+    }
+ }
 /* ***********************************Seventh section*********************************************** */
 .seventh{
     width:100%;
     background-color:#F1F5FD;
 }
 .seven{
-    width:80%;
+    width:85%;
     margin: auto;
     display:flex;
 }
@@ -664,6 +641,7 @@ outline:none
     font-size: 1vw;
     font-weight: bold;
 }
+
 .seventh .sev1 .sev1para{
     font-size: 1vw;
     line-height:1.5;
@@ -708,6 +686,11 @@ outline:none
         width:45%;
         height:60%;
     } */
+    @media(max-width:1000px){
+        .seven{
+            width:100%;
+        }
+    }
 @media(max-width:607px){
 .seven{
     width:100%;
@@ -735,13 +718,19 @@ outline:none
 .seventh .sev1 i{
     font-size: 5vw;;
 }
+.seventh .sev1 .cheak{
+    margin: 3vw 0;
+}
+.seventh .sev1 .button{
+    margin:3vw 0
+}
 .seventh img{
     display:none;
 }
 }
 /* ****************************************************************************************************** */
 .eighth{
-    width:75vw;
+    width:85vw;
     margin:6vw auto;   
     text-align: center;
 }
@@ -758,14 +747,14 @@ outline:none
 }
 .eighth h1{
     width:50%;
-    font-size: 2.5vw;
+    font-size: 2.7vw;
     line-height: 1.3;
     margin:1.5vw auto;
     font-family: 'oswald', sans-serif; 
 }
 .eighthmenu{
-    width:80%; 
-    margin:2vw auto;
+    width:50%; 
+    margin:1vw auto;
     display:flex;
     justify-content: space-around;
     align-items: center;
@@ -773,7 +762,7 @@ outline:none
 }
 .eighthmenu a{
     color:var(--maincolor);
-    border:2px solid #DFB163;
+    border:1px solid #DFB163;
     font-family: 'Montserrat', sans-serif;
     padding: 0.5vw 1vw;
 }
@@ -796,7 +785,6 @@ outline:none
     position: absolute;
     bottom:-100%;
     transition: 0.8s;
-    border:2px solid black;
     background-color: black;
 }
 .galhover p{
@@ -830,17 +818,21 @@ margin:auto;
 
     height: 100%;;
 }
+@media(max-width:1000px){
+    .eighth{
+        width:100%;
+        padding: 0 3vw;
+    }
+}
 @media(max-width:608px){
     .eighth{
         width:100%;
         padding:3vw;
     }
     .eighthmenu{
+        margin:5vw auto;
         width:100%
     }
-    /* .eighthmenu a{
-        width:50%;
-    } */
     .eighthgallary{
         grid-template-columns: repeat(2,1fr);
 grid-template-columns: repeat(2,1fr);
@@ -861,13 +853,12 @@ grid-template-columns: repeat(2,1fr);
     text-align: center;
 }
 .nine{
-    width:75%;
+    width:85%;
     margin:auto;
     display: flex;
-justify-content: center;
 }
 .ninth .n1{
-    width:34%;          
+    width:45%;          
     background-color: var(--maincolor);
     display:flex;
     justify-content: center;
@@ -885,31 +876,9 @@ justify-content: center;
 .ninth .n1 h1{
     font-family: 'oswald medium', sans-serif;
     line-height: 1.3;
-    font-size: 2.5vw;
+    font-size: 3vw;
     font-weight: 1000;
 }   
-/* .ninthslide{
-} */
-.ninthslide{
-    width:75%;
-    height:100%;
-    position: relative;
-    overflow: hidden;
-    padding: 6vw 0.5vw;
-}
-.ninthslide .n2{
-    width:240%;
-    display:inline-flex;
-    transition: 0.8s;
-    justify-content: space-between;
-}
-.ninthslide .n2 .cards{
-    width: 40%;
-    margin: 0 1vw;
-}
-.ninth .ninthslide .n2 .cards img{
-    width:100%;
-}
 .ninth .cardsdata{
     width:100%;
     display: flex;
@@ -931,25 +900,28 @@ justify-content: center;
     font-family: 'Montserrat', sans-serif;
     margin: 0.5vw 0;
 }
-.ninthslide button{
-    border:none;
-    outline:none;
+.slides .cards{
+    width:85%!important;
+    margin: 0;
+    overflow: hidden;
 }
-.ninthslide .btn1{
-    position: absolute;
-    z-index: 100;
-    padding:1vw 1.4vw;
-    background-color: var(--maincolor);
-    top:50%;
-    left:7%;   
+.slides .cards img{
+    width:100%;
+    height:100%;
 }
-.ninthslide .btn2{
-    position: absolute;
-    z-index: 100;
-    padding:1vw 1.4vw;
-    background-color: var(--maincolor);
-    top:50%;
-    right:7%;
+.nine .slides{
+    width:100%;
+    /* padding: 8vw 0; */
+    margin: 7vw 0;
+}
+/* .nine .slides .slide1s{
+    padding: 5vw;
+} */
+@media(max-width:1000px){
+    .nine{
+        width:100%;
+        padding: 0 3vw;
+    }
 }
 @media(max-width:607px){
     .nine{
@@ -982,7 +954,7 @@ justify-content: center;
 }
 /* ******************************************************************************** */
 .tenth{
-    width:75%;
+    width:85%;
     /* height:70vh; */
     margin:auto;
     display: flex;
@@ -1059,6 +1031,12 @@ height: 100%;
 width:100%;
 height:100%;
 }
+@media(max-width:1000px){
+    .tenth{
+        width:100%;
+        padding: 0 3vw;
+    }
+}
 @media(max-width:607px){
     .tenth{
         width:100%;
@@ -1125,7 +1103,7 @@ font-size: 2.5vw;
 width: 40%;
 }
 .twelthcards{
-    width:77%;
+    width:85%;
     margin:2vw auto;
     display:flex;
     justify-content: space-around;
@@ -1216,6 +1194,9 @@ margin:2vw  0;
     .twcard div h5{
         font-size: 8vw;
     }
+    .twcard{
+        margin: 3vw;
+    }
     .twelpara{
         font-size: 5vw!important;
         margin:5vw 1vw!important;
@@ -1257,6 +1238,9 @@ footer .adress .fadr i{
     border-radius: 50%;
     font-size: 1vw;
     color:white;
+}
+.adress h2{
+    margin-left: 1vw;
 }
 footer .menu{
     width:23%;

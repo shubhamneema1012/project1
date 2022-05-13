@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +8,13 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
 </head>
 
@@ -78,19 +84,18 @@
 
     </section>
     <section class="slide">
-        <button class="btn1" onclick="decslide()"><i class="fa-solid fa-angle-left"></i></button>
-        <button class="btn2" onclick="incslide()"><i class="fa-solid fa-angle-right"></i></button>
-        <div class="slide1">
+        <!-- <button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button> -->
+        <div class="slide1 slider autoplay">
             <div class="sid">
                 <div class="fourth_overlay"></div>
                 <p>CREATIVE INTERIOR DESIGN</p>
-                <h2>Make Your Home Better</h2>
-                <a href="#" class="bt">Learn More</a>
+                <h1>Make Your Home Better</h1>
+                <a href="#">Learn More</a>
             </div>
             <div class="sid">
                 <div class="fourth_overlay"></div>
                 <p>CREATIVE INTERIOR DESIGN</p>
-                <h2>Make Your Better</h2>
+                <h1>Stay AT Home In Peace</h1>
                 <a href="#">Learn More</a>
             </div>
         </div>
@@ -139,48 +144,32 @@
             <p>Invidunt lorem justo sanctus clita.Erat lorem labore ea.justo dolor lorem ipsum ut sed eos ipsum et
                 dolorkasd sit ea justo.Erat justo sed sed diam.Ea et erat ut sed diam sea ipsum est dolor.</p>
             <button>View more</button>
-        </div>
-        <div class="sixth2">
-            <button class="btn1" onclick="decsixthslide()"><i class="fa-solid fa-angle-left"></i></button>
-            <button class="btn2" onclick="incsixthslide()"><i class="fa-solid fa-angle-right"></i></button>
-            <div class="sixth2slide">
-                <div class="sixth2card">
+            </div>
+        <section class="slides">
+            <!-- <button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button> -->
+            <div class="slide1s slider2 autoplay2">
+                <div class="sids">
                     <i class="fa-solid fa-kitchen-set"></i>
                     <h3>Kitchen design</h3>
                     <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
                 </div>
-                <div class="sixth2card">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <h3>Bathroom design</h3>
+                <div class="sids">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <h3>Kitchen design</h3>
                     <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
                 </div>
-                <div class="sixth2card">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <h3>Bathroom design</h3>
+                <div class="sids">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <h3>Kitchen design</h3>
                     <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
                 </div>
-                <div class="sixth2card">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <h3>Bathroom design</h3>
-                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
-                </div>
-                <div class="sixth2card">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <h3>Bathroom design</h3>
-                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
-                </div>
-                <div class="sixth2card">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <h3>Bathroom design</h3>
-                    <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
-                </div>
-                <div class="sixth2card">
-                    <i class="fa-solid fa-envelope-open-text"></i>
-                    <h3>Bathroom design</h3>
+                <div class="sids">
+                    <i class="fa-solid fa-kitchen-set"></i>
+                    <h3>Kitchen design</h3>
                     <p>Diam amet eos at no eos sit lorem,amet rebum ipsum clita stet, diam sea est diam eos</p>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     <section class="seventh">
         <div class="seven">
@@ -278,10 +267,9 @@
                 <h4>OUR TEAM</h4>
                 <h1>Meet Our Team Members</h1>
             </div>
-            <div class="ninthslide">
-                <button class="btn1" onclick="decninthslide()"><i class="fa-solid fa-angle-left"></i></button>
-                <button class="btn2" onclick="incninthslide()"><i class="fa-solid fa-angle-right"></i></button>
-                <div class="n2">
+            <section class="slides">
+                <!-- <button class="slick-prev slick-arrow" aria-label="Previous" type="button">Previous</button> -->
+                <div class="slide1s slider2 autoplay3">
                     <div class="cards">
                         <img src="./img/team-1.jpg" alt="">
                         <div class="cardsdata">
@@ -332,7 +320,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+    
         </div>
     </section>
     <section class="tenth">
@@ -472,6 +461,12 @@
         <p><span>©️Your Site Name</span>. All Rights Reserved .Designed by <span>HTML Codex</span></p>
     </div>
     <script src="animation.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="slider.js"></script>
 </body>
+
 
 </html>
